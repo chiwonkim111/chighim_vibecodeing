@@ -16,6 +16,7 @@ export default function Home() {
             <a href="#curriculum" className="hover:text-white transition-colors">커리큘럼</a>
             <a href="#instructor" className="hover:text-white transition-colors">강사소개</a>
             <a href="#faq" className="hover:text-white transition-colors">FAQ</a>
+            <a href="/blog" className="hover:text-white transition-colors">블로그</a>
           </div>
           {/* CTA 버튼 */}
           <button className="glow-button px-6 py-2 rounded-full text-black font-semibold text-sm">
@@ -380,6 +381,7 @@ export default function Home() {
             © 2024 바이브코딩. All rights reserved.
           </div>
           <div className="flex gap-6 text-gray-400 text-sm">
+            <a href="/blog" className="hover:text-white transition-colors">블로그</a>
             <a href="#" className="hover:text-white transition-colors">이용약관</a>
             <a href="#" className="hover:text-white transition-colors">개인정보처리방침</a>
             <a href="#" className="hover:text-white transition-colors">문의하기</a>
