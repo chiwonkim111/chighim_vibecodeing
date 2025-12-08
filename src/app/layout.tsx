@@ -10,6 +10,9 @@ const notoSansKR = Noto_Sans_KR({
   weight: ["300", "400", "500", "700", "900"],
 });
 
+// 사이트 기본 URL
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://chighim-vibecodeing.vercel.app';
+
 // 메타데이터 설정 - SEO 및 페이지 정보
 export const metadata: Metadata = {
   title: "바이브코딩 | 비개발자를 위한 AI 코딩 강의",
@@ -18,6 +21,13 @@ export const metadata: Metadata = {
   // Google Search Console 인증
   verification: {
     google: "pNR03IXqRxV7I_m8Bm7FAq5_jxUJuj6FBHe3yRYCn9s",
+  },
+  // RSS 피드 및 대체 링크
+  alternates: {
+    canonical: BASE_URL,
+    types: {
+      'application/rss+xml': `${BASE_URL}/feed.xml`,
+    },
   },
 };
 
