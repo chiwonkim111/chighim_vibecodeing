@@ -40,6 +40,20 @@ export default function RootLayout({
     // 한국어 설정
     <html lang="ko">
       <head>
+        {/* Google Analytics (gtag.js) - 웹사이트 분석 */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-757V5PZDJV"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-757V5PZDJV');
+          `}
+        </Script>
         {/* Google AdSense 확인용 스크립트 */}
         <Script
           async
