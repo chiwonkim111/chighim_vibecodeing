@@ -18,10 +18,18 @@ export default function Home() {
             <a href="#faq" className="hover:text-white transition-colors">FAQ</a>
             <a href="/blog" className="hover:text-white transition-colors">블로그</a>
           </div>
-          {/* CTA 버튼 */}
-          <button className="glow-button px-6 py-2 rounded-full text-black font-semibold text-sm">
-            수강 신청
-          </button>
+          {/* 로그인/회원가입 & CTA 버튼 */}
+          <div className="flex items-center gap-4">
+            <a href="/auth/login" className="text-sm text-gray-400 hover:text-white transition-colors">
+              로그인
+            </a>
+            <a href="/auth/signup" className="text-sm text-gray-400 hover:text-white transition-colors">
+              회원가입
+            </a>
+            <a href="/payment" className="glow-button px-6 py-2 rounded-full text-black font-semibold text-sm">
+              수강 신청
+            </a>
+          </div>
         </div>
       </nav>
 
@@ -49,12 +57,12 @@ export default function Home() {
           
           {/* CTA 버튼들 */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up delay-300">
-            <button className="glow-button px-8 py-4 rounded-full text-black font-bold text-lg">
+            <a href="/auth/signup" className="glow-button px-8 py-4 rounded-full text-black font-bold text-lg text-center">
               무료 체험 시작하기 →
-            </button>
-            <button className="px-8 py-4 rounded-full border border-white/20 text-white font-medium hover:bg-white/5 transition-colors">
+            </a>
+            <a href="#curriculum" className="px-8 py-4 rounded-full border border-white/20 text-white font-medium hover:bg-white/5 transition-colors text-center">
               커리큘럼 보기
-            </button>
+            </a>
           </div>
           
           {/* 통계 */}
@@ -360,9 +368,9 @@ export default function Home() {
               <span className="text-5xl font-black gradient-text">₩390,000</span>
             </div>
             <p className="text-gray-500 text-sm mb-8">평생 소장 / 무제한 수강</p>
-            <button className="w-full glow-button py-4 rounded-full text-black font-bold text-lg">
+            <a href="/payment" className="block w-full glow-button py-4 rounded-full text-black font-bold text-lg text-center">
               지금 수강 신청하기
-            </button>
+            </a>
           </div>
           
           <p className="text-gray-500 text-sm">
